@@ -1,5 +1,7 @@
 # Bookkeeping
 flutter记账app，iOS安卓
+from https://github.com/forkdog/Bookkeeping
+添加了 云端同步功能.
 
 [安装地址](https://www.pgyer.com/Oeit)
 
