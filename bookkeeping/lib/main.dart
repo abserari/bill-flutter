@@ -41,17 +41,17 @@ void main() async {
   } else {
     print('bucket $bucket already exists');
   }
-
+  var username = 1000;
   Directory document = await getApplicationDocumentsDirectory();
   String path = join(document.path, 'AccountDb', 'Account.db');
-  // 同步云端数据
+  // 同步云端数据到本地
   await minio.fGetObject(bucket, object, path);
 
   // 定时同步时间间隔
   const period = const Duration(seconds: 20);
 
   // 如果需要同步, 就同步到服务器端
-  if (ifasync(1000)) {
+  if (ifasync(username)) {
     new Timer.periodic(
         period,
         (Timer t) async =>
